@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "rag-fastapi"
+version = "1.0.0"
+description = "Production-ready FastAPI RAG application"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "pydantic-settings",
+    "chromadb",
+    "sentence-transformers",
+    "torch",
+    "ollama",
+    "huggingface-hub",
+    "requests",
+]
+
+[tool.fastapi]
+```
